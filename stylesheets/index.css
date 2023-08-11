@@ -1,0 +1,89 @@
+@import url("common.css");
+
+.maintenance {
+	background-color: var(--main-cyan);
+	color: #f0f0f0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.maintenance-close {
+	color: #f0f0f0;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	width: 36px;
+	height: 26px;
+}
+
+.disappear {
+	display: none;
+	transition: 0.5s;
+}
+
+.welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    gap: 6vh;
+	align-items: center;
+	text-align: center;
+	height: 90vh;
+	background-image: url("../img/eurotunnel-1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome-text {
+    width: fit-content;
+    max-width: 60%;
+	color: var(--main-cyan);
+	background-color: #0e2e3eba;
+	font-size: 2rem;
+	text-shadow: 2px 2px 1px #1f1f1f;
+	padding-left: 18px;
+	padding-right: 18px;
+	border-radius: 17px;
+}
+
+.company-name {
+	display: inline-block;
+}
+
+.blue-button {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 7px 20px !important;
+    margin: 0px 0px 0px 20px;
+    background-color: #fff8;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #062735ba;
+    transition: 0.4s;
+}
+
+.blue-button a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #062735ba;
+}
+
+.blue-button:hover {
+    background-color: #0e2e3edd;
+    cursor: pointer;
+}
+
+.blue-button:hover a{
+    color: white;
+}
+
+@media (max-width: 500px) {
+	.welcome-text {
+		font-size: 1.4rem;
+	}
+}

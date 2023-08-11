@@ -1,0 +1,58 @@
+@import url("common.css");
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 45vh;
+    padding: 2% 2rem;
+    background: var(--main-cyan);
+}
+
+.contact-section-header > h2 {
+	font-size: 2.8rem;
+	color: #f0f0f0;
+    margin: auto 5%;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+	color: #f0f0f0;
+    display: inline-block;
+    padding: 1rem 2rem;
+	border-radius: 2px;
+	font-size: 1rem;
+    background: var(--main-gray);
+}
+
+.contact-details {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+	transition: transform 0.3s ease-out;
+	background-color: var(--main-cyan)
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+@media (max-width: 500px) {
+	.contact-section-header > h2 {
+		font-size: 1.3rem;
+	}
+
+	.contact-details {
+		font-size: 1rem;
+	}
+}

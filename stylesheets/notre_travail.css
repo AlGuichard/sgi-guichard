@@ -1,0 +1,53 @@
+@import url("common.css");
+
+.work-section {
+    text-align: center;
+    background-color: var(--main-cyan);
+    padding: 3% 2%;
+}
+
+.work-section > h1 {
+    color: white;
+}
+
+.work-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+    margin: 20px 8%;
+}
+
+.img-work {
+    width: 40%;
+}
+
+.work-presentation {
+    font-size: 1.3em;
+}
+
+.external-link-wrapper {
+	margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.tip {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.tip::before {
+    content: "* ";
+}
+
+@media (max-width: 900px) {
+    .work-presentation {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+	.work-presentation {
+		font-size: 0.8em;
+	}
+}
